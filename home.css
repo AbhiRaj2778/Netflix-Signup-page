@@ -124,7 +124,7 @@ header{
     left:5.5rem;
 }
 .name{
-    background-image: url(mainMedia/main-naruto-text.png);
+    background-image: url(./mainMedia/main-naruto-text.png);
     background-size:cover;
     height:25rem;
     width: 59rem;
