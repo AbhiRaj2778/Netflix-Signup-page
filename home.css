@@ -1,0 +1,430 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    
+}
+html{
+    font-size: 10px;
+    font-family: tahoma;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+/* body div{
+    border: 1px red solid;
+} */
+.bgvideo{
+    position:absolute;
+    top:-2rem;
+    aspect-ratio: 16/9;
+    width:100%;
+    z-index: -1;
+    visibility: hidden;
+    animation: hide 3.6s forwards ;
+}
+@keyframes hide {
+    0%,99%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+header{
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.201),rgba(128, 128, 128, 0), rgb(0, 0, 0) 75% 100%) ,url(mainMedia/main_naruto.png);
+    animation: bg 2s forwards;
+    animation-delay: 3s;
+}
+@keyframes bg {
+    from{
+        background-image: url(mainMedia/main_naruto.png) linear-gradient(black,gray,rgba(0, 0, 0, 0.603));
+    }
+    to{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.478),rgba(128, 128, 128, 0.059),rgba(0, 0, 0, 0.937) 75% 100%);
+        background-color: transparent;
+    }
+}
+.nav{
+    width:100%;
+    height:7rem;
+    background-color: rgba(0, 0, 0, 0.303);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+}
+.logo-wrapper{
+    width:60%;
+    height:4rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.menus a,.account-wrapper a{
+    text-decoration: none;
+    color: white;
+    padding: 0rem 0.75rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.logo{
+    color: rgb(229,9,20);
+    fill: currentColor;
+    margin: 0rem 4rem 0rem 5rem;
+}
+.logo svg{
+    width: 10rem;
+    height: 2.5rem;
+}
+.account-wrapper{
+    width:40%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.search-icon{
+    margin:0rem 2rem 0rem 2rem;
+    color:white
+}
+.bell{
+    margin:0rem 0rem 0rem 2rem;
+}
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 7.5rem 0rem 2rem;
+}
+.avatar{
+    border-radius: .5rem;
+    background-image: url(mainMedia/Netflix-avatar.png);
+    background-size: cover;
+    width:3rem;
+    height: 3rem;
+    margin: .25rem;
+}
+.title{
+    width:50%;
+    height:70vh;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    position: relative;
+    top:18rem;
+    left:5.5rem;
+}
+.name{
+    background-image: url(mainMedia/main-naruto-text.png);
+    background-size:cover;
+    height:25rem;
+    width: 59rem;
+    position: relative;
+    animation: name 3s forwards ;
+    animation-delay: 5s;
+}
+@keyframes name{
+    from{
+        height:25rem;
+        width: 59rem;
+        top: 0rem;
+    }
+    to{
+        height:15rem;
+        width: 34rem;
+        top:14rem;
+    }
+}
+.title-text{
+    color:white;
+    font-size: 1.75rem;
+    font-weight: 600;
+    position: relative; 
+    animation: text 2s forwards ;
+    animation-delay: 5s;
+
+}
+@keyframes text {
+    from{
+        top: 0rem;
+        color: white;
+    }
+    to{
+        top: 12rem;
+        color: transparent;  
+    }
+}
+.buttons{
+    width: 54rem;
+    height: 6rem;
+    display: flex;
+    align-items: end;
+    position: relative;
+    animation: buttons 3s forwards;
+    animation-delay: 5s;
+}
+@keyframes buttons {
+    from{
+        top:0rem;
+    }
+    to{
+        top:10rem;
+    }
+}
+.play{
+    width:13rem;
+    height: 5rem;
+    color: black;
+}
+.moreinfo{
+    width:17rem;
+    height: 4.6rem;
+    border-radius: 4px;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background-color: #6d6d6ea4;
+    margin-left: 1rem;
+}
+.moreinfo svg{
+    padding-right: 1rem;
+}
+.play{
+    border-radius: 4px;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+.play p,.moreinfo p{
+    padding-top: 0.6rem;
+}
+
+
+
+
+.main{
+    color: white;
+    position: relative;
+    left: 5.5rem;
+    /* top:5rem; */
+    width:145rem;
+    height:17rem ;
+    margin-bottom: 5rem;
+}
+#one{
+    z-index: 50;
+    bottom: -5rem;
+}
+#two{
+    z-index: 49;
+}
+#three{
+    z-index: 48;
+}
+#four{
+    z-index: 47;
+}
+#five{
+    z-index: 46;
+}
+#six{
+    z-index: 45;
+    width:95%;
+    height: 20rem;
+    /* border: 2px red solid; */
+}
+#sc-six{
+    width: 100%;
+    height: 16rem;
+    justify-content: space-around;
+}
+#seven{
+    z-index: 44;
+}
+#eight{
+    z-index: 43;
+    width:95%;
+    height: 20rem;
+    /* border: 2px red solid; */
+}
+#sc-eight{
+    width: 100%;
+    height: 16rem;
+    justify-content: space-around;
+}
+/* .top{
+    display: flex;
+    border: 2px red solid;
+    height:16rem;
+}
+.top h1{
+    padding: 0px;
+    margin: 0px;
+    line-height: 17rem;
+    font-size: 17rem;
+    
+} */
+.top img{
+    width:50%;
+}
+.main h2{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    padding: 0rem .5rem;
+    margin-bottom: 1rem;
+}
+.scroll{
+    width:90%;
+    height:13rem;
+    display: flex;
+    align-self: center;
+    position: relative;
+    
+
+}
+.holder{
+    width:23rem;
+    height:13rem;
+    border-radius: .4rem;
+    margin: 0rem 0rem 0rem 0.5rem;
+    position: sticky;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+.holder:hover{
+    animation: zoom 0.5s forwards;
+    animation-delay: 0.5s;
+}
+@keyframes zoom {
+    0%{
+        width:23rem;
+        height:13rem;
+    }
+    100%{
+        width:35rem;
+        height:33rem;
+    }
+}
+.ctrl-wrapper{
+    width:35rem;
+    height:15rem;
+    position: relative;
+    top:18rem;
+    background-color: rgb(39, 38, 38);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    visibility: hidden;
+
+}
+.holder:hover .ctrl-wrapper{
+    animation: show 6s forwards;
+    animation-delay: .9s;
+}
+@keyframes show {
+    0%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+.controls{
+    width:50%;
+    height:4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.controls h3{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+
+
+
+
+/* footer starte here  */
+footer{
+    width: 99.8%;
+    height:40vh;
+    background-color: black ;
+    /* border: 1px red solid; */
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.footer-container{
+    width: 70%;
+    height:25vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    /* border: 1px red solid; */
+    text-decoration: none;
+}
+.footer-container a{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+.footer-icon{
+    width:15rem;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.acc-hover{
+    width:20rem;
+    height:25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-around;
+    position:fixed;
+    background-color: black;
+    border: 1px red solid;
+    top:6rem;
+    right:8rem;
+    z-index: 51;
+    color: #ffffff;
+    font-size: 1.4rem;
+    opacity: 0; 
+}
+.account:hover .acc-hover{
+    opacity: 100;
+    z-index: 52;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
